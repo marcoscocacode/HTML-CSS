@@ -1,0 +1,32 @@
+a[href="formacao"] {color: blue;}
+
+/* Pseudo-classes */
+
+a:link {background-color: aqua;}
+a:focus, a:hover {background-color: aqua;}
+
+a::before {
+    content: "Olá";}
+
+a::after {
+    content: "Mundo";}
+
+/* Box Model */
+
+h1{
+    border: 1px solid black;
+    border-radius: 10px;
+
+    box-shadow: 5px 5px 5px black;
+
+    visibility: hidden;
+
+    padding: 10px;
+
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+
+    margin: 10px 20px 30px 40px; /* Da mesma forma que o margin-top, margin-right, margin-bottom e margin-left */
+}

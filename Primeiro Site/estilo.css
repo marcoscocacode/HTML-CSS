@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+a{
+    background-color: #E5E5E5;
+    margin-left: 0px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    color: rgb(0, 47, 255);
+}
+
+a:hover, a:focus{
+    background-color: #1b66bb;
+    color: black;
+}
+
+li{
+    display: inline;
+    margin-right: 20px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    display: grid;
+    grid-template-areas: 
+        "um dois";
+    grid-template-columns: auto;
+}
+
+section{
+    grid-area: um;
+}
+
+aside{
+    grid-area: dois;
+}
+
+video{
+    width: 175px;
+}
+
+header{
+    background-color: #E5E5E5;
+    padding: 10px;
+    text-align: center;
+}
+
+h1, h2{
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+article#cursos{
+    background-image: url(https://media-exp2.licdn.com/dms/image/C4E03AQHoR8DL1m5CIQ/profile-displayphoto-shrink_200_200/0/1652595224246?e=1661385600&v=beta&t=PRE10JkabcR6qlgVio5b1Xu_0he0qft2jUUFbd8s3YA);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+article#estudando{
+    background-color: #E5E5E5;
+    padding: 20px;
+    line-height: 20px;
+}
+
+article#habilidades{
+    background-color: #4387D8;
+    padding: 20px;
+}
+
+aside{
+    background-color: #315E93;
+    padding: 20px;
+}
+
+footer{
+    background-color: #4387D8;
+    padding: 20px;
+}
+
+@media screen and (max-width: 1024px){
+    main{
+    display: block;
+    }
+}
+
+@keyframes animacao{
+    from {top: 0; left: 0;}
+    to {top: 100px; left: 100px;}
+}
+
+nav{
+    position: absolute;
+    animation-name: animacao;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
